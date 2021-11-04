@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>카카오골프예약</title>
+  <link rel="stylesheet" type="text/css" href="./css/common.css" />
+  <link rel="stylesheet" type="text/css" href="./css/reservation.css" />
+  <link rel="stylesheet" type="text/css" href="./css/myinfo.css" />
+  <link rel="stylesheet" type="text/css" href="./css/popup.css" />
+</head>
+
+<body class="terms-body mx-750">
+  <div id="wrapper">
+    <div class="top-label">
+      <h2>예약 정보</h2>
+      <a href="#" class="top-label_back">뒤로 가기</a>
+    </div>
+    <div class="reservation">
+      <div class="reservation-ttl">예약 정보</div>
+      <div class="reservation-info">
+        <table>
+          <colgroup>
+            <col width="24%" />
+            <col width="76%" />
+          </colgroup>
+          <tr>
+            <th>골프장명</th>
+            <td>루트52</td>
+          </tr>
+          <tr>
+            <th>예약자명</th>
+            <td>이미선</td>
+          </tr>
+          <tr>
+            <th>예약번호</th>
+            <td>62849374</td>
+          </tr>
+          <tr>
+            <th>티타임</th>
+            <td>09.29 (수) 오전 09시 00분</td>
+          </tr>
+        </table>
+      </div>
+      <div class="reservation-ttl">
+        동반자 초대 및 공유
+        <a href="#" class="link-copy">링크 복사</a>
+      </div>
+
+      <!--
+        1. 비회원 이미지 랜덤 img_non_member1 ~ img_non_member4
+          <img src="../img/self/img_non_member1.png" alt="비회원">
+        2. 회원 추가 이미지 랜덤 img_non_add1 ~ img_non_add2
+          <img src="../img/self/img_non_add1.png" alt="추가">
+      -->
+      <ul class="reservation-list">
+        <li>
+          <div class="reservation-list_picture">
+            <div class="reservation-list_picture_t">
+              <img src="../img/self/img_sample.png" alt="샘플">
+            </div>
+          </div>
+          <p class="reservation-list_name">이미선<span class="reservation-ico_my">나</span></p>
+        </li>
+        <li>
+          <div class="reservation-list_picture">
+            <div class="reservation-list_picture_t">
+              <img src="../img/self/img_non_member1.png" alt="비회원">
+            </div>
+            <a href="#" class="btn-reservation_del">삭제</a>
+          </div>
+          <p class="reservation-list_name">임수현</p>
+        </li>
+        <li>
+          <div class="reservation-list_picture">
+            <div class="reservation-list_picture_t">
+              <img src="../img/self/img_non_add1.png" alt="추가">
+            </div>
+            <a href="#" class="btn-reservation_add">추가</a>
+          </div>
+          <p class="reservation-list_name"></p>
+        </li>
+        <li>
+          <div class="reservation-list_picture">
+            <div class="reservation-list_picture_t">
+              <img src="../img/self/img_non_add2.png" alt="추가">
+            </div>
+            <a href="#" class="btn-reservation_add">추가</a>
+          </div>
+          <p class="reservation-list_name"></p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="btn-bottom"><a href="#"><span class="ico_self"></span>셀프체크인 하기</a></div>
+  </div>
+  <div class="alert-pop-wrap">
+    <div class="alert-pop-box">
+      <div class="alert-pop-inner">
+        <div class="alert-pop-cont">
+          <p class="alert-pop-ttl2">셀프체크인 링크 복사 완료</p>
+          <p class="alert-pop-txt">셀프체크인 링크가 복사되었습니다. <br />동반자에게 셀프체크인 링크를 전달해 <br />주세요.</p>
+          <a href="#" class="alert-pop-confirm">확인</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="alert-pop-dimm"></div>
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript">
+  (function (win, $) {
+    'use strict';
+
+    /* popup start */
+    var alertPop = function () {
+      var popSel = $(".alert-pop-wrap"),
+        popInner = $(".alert-pop-inner"),
+        btnPop = $(".link-copy"),
+        btnPopClose = $(".alert-pop-wrap .alert-pop-confirm"),
+        popDimm = $(".alert-pop-dimm");
+
+      btnPop.on('click', function (e) {
+        popDimm.show();
+        popSel.fadeIn();
+        e.preventDefault();
+      });
+
+      btnPopClose.on('click', function (e) {
+        popDimm.hide();
+        popSel.fadeOut();
+        e.preventDefault();
+      });
+
+      popSel.on('click', function (e) {
+        if (e.target == e.currentTarget) {
+          popDimm.hide();
+          popSel.fadeOut();
+        }
+      });
+
+      popInner.on('click', function (e) {
+        if (e.target == e.currentTarget) {
+          popDimm.hide();
+          popSel.fadeOut();
+        }
+      });
+
+      popDimm.on('click', function () {
+        popDimm.hide();
+        popSel.fadeOut();
+      });
+    };
+    /* popup end */
+
+    $(function () {
+      alertPop();
+    });
+
+  })(window, window.jQuery);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+.myinfo {
+  position: relative;
+  min-height: 100%;
+  padding: 0 18px 25px;
+}
+
+.top-guide-txt {
+  display: block;
+  margin: 20px 0 8px 0;
+  color: #717A83;
+  font-size: 14px;
+}
+
+.box-input-txt {
+  display: block;
+  width: 100%;
+  height: 46px;
+  padding: 0 13px;
+  background-color: #F8F8F8;
+  color: #171717;
+  border: 1px solid #E6EBF0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bottom-guide-txt {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #1F8FFF;
+}
+
+.btn-gender-wrap {
+  margin-bottom: 67px;
+  font-size: 0;
+}
+
+.btn-gender-wrap:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.btn-gender-wrap a {
+  display: block;
+  float: right;
+  width: 49.3%;
+  height: 46px;
+  line-height: 46px;
+  background: #F8F8F8;
+  border: 1px solid #E6EBF0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn-gender-wrap a:first-child {
+  float: left;
+  margin-left: 0;
+}
+
+.btn-gender-wrap a.active {
+  background-color: #5E646A;
+  border: 1px solid #5E646A;
+  color: #9CA1A7;
+}
+
+.btn-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn-bottom a {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #FFE500;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+}

@@ -1,0 +1,222 @@
+.selfcheckin {
+	position: relative;
+	min-height: 100%;
+	padding: 0 18px 25px;
+}
+.selfcheckin-wrap {
+	padding: 20px 0 44px;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+.selfcheckin-info {
+	float: left;
+}
+.selfcheckin-info_picture {
+	display: inline-block;
+	overflow: hidden;
+	width: 53px;
+	height: 53px;
+	margin-right: 11px;
+	border-radius: 22px;
+	vertical-align: middle;
+	img {
+		width: 100%;
+	}
+}
+.selfcheckin-info_nw {
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+}
+.selfcheckin-info_name {
+	margin-bottom: 8px;
+	font-size: 20px;
+	font-family: "Kakao-Bd";
+}
+.selfcheckin-info_tag {
+	font-size: 15px;
+}
+.btn-tag_modify {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 8px;
+	background: url('https://images.kakao.golf/web/images/locker/selfcheckin/self/ico_modify.png') 50% 50% no-repeat;
+	vertical-align: middle;
+	font-size: 0;
+}
+.selfcheckin-info_qr {
+	display: block;
+	float: right;
+	width: 70px;
+	height: 70px;
+	margin-top: -6px;
+	background: url('https://images.kakao.golf/web/images/locker/selfcheckin/self/btn_modify.png') 0 0 no-repeat;
+	font-size: 0;
+}
+.selfcheckin-msg {
+	position: relative;
+	width: 100%;
+	padding: 13px 16px;
+	box-sizing: border-box;
+	background: #F1F3F5;
+	border-radius: 8px;
+	p {
+		font-size: 14px;
+		color: #2B2F36;
+		line-height: 1.4;
+	}
+}
+.btn-msg_close {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 22px;
+	width: 20px;
+	height: 20px;
+	margin: -10px 0 0 0;
+	background: url('https://images.kakao.golf/web/images/locker/selfcheckin/self/btn_msg_close.png') 50% 50% no-repeat;
+	font-size: 0;
+}
+.card-bottom {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 18px;
+	box-sizing: border-box;
+}
+.card-table {
+	display: table;
+	width: 100%;
+	height: 430px;
+	background-color: #FFE500;
+	border-radius: 20px;
+}
+.card-table_cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.card-icon {
+	span {
+		display: inline-block;
+		width: 56px;
+		height: 56px;
+	}
+}
+.card-icon_touch {
+	background: url('https://images.kakao.golf/web/images/locker/selfcheckin/self/ico_touch.png') 0 0 no-repeat;
+}
+.card-icon_check {
+	background: url('https://images.kakao.golf/web/images/locker/selfcheckin/self/ico_check.png') 0 0 no-repeat;
+}
+.card-dec_type1 {
+	padding: 60px 0 123px;
+	p {
+		line-height: 1.7;
+		font-size: 18px;
+	}
+	strong {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 4px;
+			background-color: #fff;
+		}
+		span {
+			position: relative;
+		}
+	}
+}
+.card-dec_type2 {
+	padding: 36px 0 104px;
+}
+.card-code {
+	padding-bottom: 12px;
+	font-size: 50px;
+	font-family: "Kakao-Bd";
+}
+.card-guide {
+	font-size: 14px;
+}
+.card-footer {
+	p {
+		line-height: 1.4;
+		font-size: 14px;
+		strong {
+			font-size: 16px;
+		}
+	}
+}
+.qr-dimm {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.qr-bottom {
+	position: fixed;
+	left: 0;
+	bottom: -495px;
+	width: 100%;
+}
+.qr-table {
+	display: table;
+	position: relative;
+	width: 100%;
+	max-width: 750px;
+	height: 495px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 20px 20px 0 0;
+}
+.qr-cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.qr-top {
+	display: block;
+	position: absolute;
+	top: 11px;
+	left: 50%;
+	width: 32px;
+	height: 3px;
+	margin-left: -16px;
+	background: #E1E1E1;
+	border-radius: 20px;
+}
+.qr-ttl {
+	font-size: 22px;
+	font-family: "Kakao-Bd";
+}
+.qr-dec {
+	padding: 14px 0 26px 0;
+	line-height: 1.4;
+	font-size: 14px;
+}
+.qr-code {
+	display: inline-block;
+	width: 236px;
+	height: 236px;
+}
+.qr-time {
+	padding: 20px 0 11px 0;
+	font-size: 14px;
+}
+.qr-count {
+	font-size: 24px;
+	color: #E65F3E;
+	font-family: "Kakao-Bd";
+}

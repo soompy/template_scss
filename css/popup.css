@@ -1,0 +1,193 @@
+.alert-pop-wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 150;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.alert-pop-box {
+  display: table;
+  width: 300px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.alert-pop-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.alert-pop-cont {
+  width: 100%;
+  background: #fff;
+}
+
+.alert-pop-ttl {
+  padding-top: 28px;
+  color: #000;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -.5px;
+}
+
+.alert-pop-ttl2 {
+  padding-top: 28px;
+  padding-bottom: 15px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+  letter-spacing: -.5px;
+}
+
+.alert-pop-ttl3 {
+  padding-top: 28px;
+  padding-bottom: 10px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+  letter-spacing: -.5px;
+}
+
+.alert-pop-ttl4 {
+  padding-top: 28px;
+  padding-bottom: 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+  letter-spacing: -.5px;
+}
+
+.alert-pop-txt {
+  padding-top: 8px;
+  color: #666;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -.5px;
+}
+
+.alert-pop-txt2 {
+  padding-top: 8px;
+  color: #666;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -.5px;
+}
+
+.alert-pop-txt3 {
+  padding-top: 8px;
+  color: #666;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -.5px;
+}
+
+.alert-pop-confirm {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: -.5px;
+  background: #ffe500;
+}
+
+.alert-pop-dimm {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.alert-pop-btns {
+  font-size: 0;
+}
+
+.alert-pop-btns a {
+  display: inline-block;
+  width: 50%;
+  height: 60px;
+  margin-top: 30px;
+  color: #000;
+  font-size: 17px;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: -.5px;
+  background: #ffe500;
+}
+
+.alert-pop-btns a.alert-pop-notallow {
+  background-color: #5D5F66;
+  color: #fff;
+}
+
+.alert-pop-notice {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.alert-pop-notice dl {
+  padding: 14px;
+  background: #F1F3F5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.alert-pop-notice dt {
+  position: relative;
+  padding: 0 0 6px 24px;
+  font-size: 14px;
+  color: #535D67;
+  font-family: "Kakao-Bd";
+}
+
+.alert-pop-notice dt:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: url("https://images.kakao.golf/web/images/locker/selfcheckin/self/ico_more.png") 0 0 no-repeat;
+}
+
+.alert-pop-notice dd {
+  position: relative;
+  padding-left: 25px;
+  font-size: 14px;
+  color: #535D67;
+  line-height: 1.3;
+}
+
+.alert-pop-notice dd:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 5px;
+  height: 5px;
+  background-color: #535D67;
+  border-radius: 50%;
+}

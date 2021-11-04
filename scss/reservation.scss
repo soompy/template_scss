@@ -1,0 +1,126 @@
+.reservation {
+	position: relative;
+	min-height: 100%;
+	padding: 0 18px 25px;
+}
+.reservation-ttl {
+	margin: 20px 0 10px 0;
+	font-size: 18px;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+.reservation-info {
+	width: 100%;
+	padding: 14px;
+	background-color: #F8F8F8;
+	border: 1px solid #E6EBF0;
+	box-sizing: border-box;
+	border-radius: 4px;
+	table {
+		width: 100%;
+		text-align: left;
+		font-size: 16px;
+		th {
+			line-height: 25px;
+			font-weight: normal;
+			color: #717A83;
+		}
+	}
+}
+.link-copy {
+	display: block;
+	float: right;
+	width: 66px;
+	height: 26px;
+	line-height: 21px;
+	border: 1px solid #1F8BD5;
+	box-sizing: border-box;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 16px;
+	color: #1F8BD5;
+}
+.reservation-list {
+	font-size: 0;
+	li {
+		display: inline-block;
+		margin-left: 16px;
+		vertical-align: middle;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+.reservation-list_picture {
+	position: relative;
+	width: 53px;
+	height: 53px;
+	img {
+		width: 100%;
+	}
+}
+.reservation-list_picture_t {
+	overflow: hidden;
+	border-radius: 22px;
+}
+.btn-reservation_del {
+	display: block;
+	position: absolute;
+	top: -3px;
+	right: -5px;
+	width: 24px;
+	height: 24px;
+	background: url('https://images.kakao.golf/web/images/locker/selfcheckin/self/btn-reservation_del.png') 0 0 no-repeat;
+	font-size: 0;
+}
+.btn-reservation_add {
+	display: block;
+	position: absolute;
+	top: -3px;
+	right: -5px;
+	width: 24px;
+	height: 24px;
+	background: url('https://images.kakao.golf/web/images/locker/selfcheckin/self/btn-reservation_add.png') 0 0 no-repeat;
+	font-size: 0;
+}
+.reservation-list_name {
+	width: 100%;
+	height: 14px;
+	margin-top: 8px;
+	text-align: center;
+	font-size: 15px;
+}
+.reservation-ico_my {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('https://images.kakao.golf/web/images/locker/selfcheckin/self/ico_na.png') 0 0 no-repeat;
+	margin-left: 3px;
+	vertical-align: middle;
+	font-size: 0;
+}
+.ico_self {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-right: 7px;
+	background: url('https://images.kakao.golf/web/images/locker/selfcheckin/self/ico_self.png') 0 0 no-repeat;
+	vertical-align: middle;
+}
+.bg-dark {
+	background-color: #2B2F36;
+	#wrapper {
+		padding-bottom: 443px;
+	}
+	.top-label {
+		h2 {
+			color: #fff;
+		}
+	}
+	.top-label_back {
+		background: url('https://images.kakao.golf/web/images/locker/selfcheckin/icon_back_white.png') 50% 50% no-repeat;
+	}
+}

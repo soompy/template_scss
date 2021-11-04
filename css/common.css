@@ -1,0 +1,796 @@
+@charset "UTF-8";
+@import url(../css/reset.css);
+@import url(../css/fonts.css);
+#wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 71px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#wrapper.marketing-wrap {
+  padding: 24px 18px;
+}
+
+#wrapper.regulation-wrap {
+  padding: 24px 18px;
+}
+
+#wrapper.notice-wrap {
+  padding: 24px 18px;
+}
+
+#wrapper.competition-wrap {
+  padding: 0;
+}
+
+#wrapper.withdraw-wrap {
+  padding: 24px 18px 111px;
+}
+
+.login-wrap {
+  padding-top: 84px;
+  background: #ffe500;
+}
+
+.bi {
+  width: 182px;
+  height: 29px;
+  margin: 0 auto;
+  text-indent: -10000px;
+  background: url("https://images.kakao.golf/web/images/locker/selfcheckin/bi.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.login-main-txt {
+  padding-top: 10px;
+  color: #363636;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: -.38px;
+  text-align: center;
+}
+
+.login-ryan {
+  display: block;
+  position: absolute;
+  top: 38.75%;
+  left: 50%;
+  width: 36.94%;
+  margin-left: -18.47%;
+}
+
+.complete-ryan {
+  display: block;
+  position: absolute;
+  top: 38.75%;
+  left: 50%;
+  width: 37.77%;
+  margin-left: -18.885%;
+}
+
+.login-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 18px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.login-link {
+  display: block;
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  line-height: 58px;
+  letter-spacing: -.5px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.terms-agree-field {
+  width: 100%;
+  padding: 0 18px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.terms-confirm-box {
+  padding: 36px 0 57px;
+}
+
+.terms-confirm-ttl {
+  padding-bottom: 24px;
+  color: #222;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: -.7px;
+}
+
+.terms-phone-box {
+  position: relative;
+  padding: 0 80px;
+}
+
+.confirm-num-box {
+  display: none;
+  position: relative;
+  padding-left: 80px;
+  margin-top: 8px;
+}
+
+.confirm-num-box .input-num {
+  padding-right: 68px;
+}
+
+.terms-phone-area.terms-phone-confirm .confirm-num-box {
+  display: block;
+}
+
+.terms-phone-area.terms-phone-confirm .terms-phone-box {
+  padding-right: 0;
+}
+
+.terms-phone-area.terms-phone-confirm .phone-confirm-btn {
+  display: none;
+}
+
+.terms-phone-area.terms-phone-confirm .confirm-path-ico {
+  opacity: 1;
+}
+
+.terms-phone-area.terms-phone-confirm .confirm-btn {
+  display: block;
+}
+
+.terms-phone-label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 40px;
+  color: #000;
+  font-size: 15px;
+  letter-spacing: -.5px;
+  line-height: 40px;
+}
+
+.terms-ttl {
+  padding: 98px 18px 56px;
+  color: #222;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.25;
+}
+
+.terms-chk {
+  display: block;
+  position: relative;
+  height: 20px;
+  padding-right: 10px;
+  font-size: 0;
+  margin-top: 16px;
+  background: url("https://images.kakao.golf/web/images/locker/selfcheckin/chk-ico-off.png") no-repeat;
+  background-size: 20px 20px;
+}
+
+.terms-chk:first-child {
+  margin-top: 20px;
+}
+
+.withdraw-chk {
+  display: block;
+  position: relative;
+  height: 20px;
+  padding-right: 10px;
+  font-size: 0;
+  background: url("https://images.kakao.golf/web/images/locker/selfcheckin/chk-ico-off.png") no-repeat;
+  background-size: 20px 20px;
+}
+
+.terms-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 10px;
+  height: 20px;
+  background: url("https://images.kakao.golf/web/images/locker/selfcheckin/terms-chk-arrow.png") no-repeat 100% 50%;
+  background-size: 8px 12px;
+}
+
+.terms-all-chk {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.terms-all-chk .terms-chk {
+  margin-top: 0;
+}
+
+.terms-all-chk .terms-chk:after {
+  display: none;
+}
+
+.terms-chk.chk-active {
+  background-image: url("https://images.kakao.golf/web/images/locker/selfcheckin/chk-ico-on.png");
+}
+
+.withdraw-chk.chk-active {
+  background-image: url("https://images.kakao.golf/web/images/locker/selfcheckin/chk-ico-on.png");
+}
+
+.input-num {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  color: #222;
+  font-family: "Kakao-Rg";
+  font-size: 14px;
+  letter-spacing: -.5px;
+  line-height: 40px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.input-num::-webkit-input-placeholder {
+  color: #b2b2b2;
+  font-size: 14px;
+}
+
+.input-num::-moz-placeholder {
+  color: #b2b2b2;
+  font-size: 14px;
+}
+
+.input-num:-ms-input-placeholder {
+  color: #b2b2b2;
+  font-size: 14px;
+}
+
+.input-num:-moz-placeholder {
+  color: #b2b2b2;
+  font-size: 14px;
+}
+
+.terms-phone-box.terms-phone-confirm .input-num {
+  padding-right: 29px;
+}
+
+.confirm-path-ico {
+  width: 15px;
+  height: 11px;
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  background: url("https://images.kakao.golf/web/images/locker/selfcheckin/confirm-path-ico.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.phone-confirm-btn {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 74px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  color: #606060;
+  font-size: 15px;
+  letter-spacing: -.5px;
+  line-height: 38px;
+  text-align: center;
+  background: #f2f2f2;
+  cursor: default;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.phone-confirm-btn.phone-confirm-active {
+  border: 1px solid #e6d11a;
+  background: #ffe500;
+  color: #000;
+  cursor: pointer;
+}
+
+.terms-error-txt {
+  display: block;
+  padding-top: 7px;
+  color: #2793ff;
+  font-size: 13px;
+  letter-spacing: -.5px;
+}
+
+.input-chk {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  border: 0;
+  cursor: pointer;
+}
+
+.all-chk-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 9px;
+  color: #363636;
+  font-family: "Kakao-Bd";
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -.5px;
+  cursor: pointer;
+}
+
+.chk-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 9px;
+  color: #363636;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -.5px;
+  cursor: pointer;
+}
+
+.withdraw-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 9px;
+  color: #363636;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -.5px;
+  cursor: pointer;
+}
+
+.terms-agree-btn {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  color: #000;
+  font-size: 18px;
+  letter-spacing: -.5px;
+  line-height: 60px;
+  text-align: center;
+  background: #ffe500;
+}
+
+.confirm-countdown {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  color: #606060;
+  font-size: 14px;
+  letter-spacing: -.5px;
+  line-height: 40px;
+}
+
+.confirm-num-repeat {
+  padding-top: 4px;
+  font-size: 0;
+  text-align: right;
+}
+
+.confirm-num-repeat-btn {
+  display: inline-block;
+  position: relative;
+  padding: 4px 0;
+  color: #222;
+  font-size: 14px;
+  letter-spacing: -.47px;
+}
+
+.confirm-num-repeat-btn:after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #222;
+}
+
+.confirm-btn {
+  display: none;
+  width: 100%;
+  height: 42px;
+  margin-top: 18px;
+  border: 1px solid #e6d11a;
+  border-radius: 3px;
+  color: #000;
+  font-size: 15px;
+  letter-spacing: -.5px;
+  line-height: 40px;
+  text-align: center;
+  background: #ffe500;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.complete-ttl {
+  padding-top: 94px;
+  color: #222;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.complete-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.complete-link {
+  display: block;
+  width: 100%;
+  height: 60px;
+  color: #000;
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: -.5px;
+  text-align: center;
+  background: #ffe500;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.terms-txt-1 {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -.5px;
+}
+
+.terms-txt-1.pt-16 {
+  padding-top: 16px;
+}
+
+.terms-txt-2 {
+  color: #000;
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: -.5px;
+}
+
+.terms-txt-2.pt-16 {
+  padding-top: 16px;
+}
+
+.terms-txt-3 {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -.5px;
+}
+
+.terms-txt-3.mt-6 {
+  margin-top: 6px;
+}
+
+.terms-txt-3.mt-4 {
+  margin-top: 4px;
+}
+
+.terms-txt-3.mt-16 {
+  margin-top: 16px;
+}
+
+.terms-txt-3.terms-txt-dot {
+  position: relative;
+  padding-left: 10px;
+}
+
+.terms-txt-3.terms-txt-dot:before {
+  display: block;
+  content: "･";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.terms-txt-3.terms-txt-essential {
+  position: relative;
+  padding-left: 10px;
+}
+
+.terms-txt-3.terms-txt-essential:before {
+  display: block;
+  content: "*";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.terms-txt-blue {
+  display: inline-block;
+  position: relative;
+  color: #2793ff;
+}
+
+.terms-txt-blue:after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #2793ff;
+}
+
+.terms-tbl-wrap {
+  margin-top: 30px;
+}
+
+.terms-tbl {
+  table-layout: fixed;
+  max-width: none;
+  width: 100%;
+  min-width: 100%;
+}
+
+.terms-tbl tr th {
+  vertical-align: top;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.terms-tbl tr td {
+  vertical-align: top;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.terms-tbl tr th.th-bg-gray {
+  padding: 11px 10px;
+  background: #f2f2f2;
+}
+
+.terms-tbl tbody tr td {
+  padding-bottom: 30px;
+}
+
+.terms-tbl-th {
+  color: #000;
+  font-size: 15px;
+  letter-spacing: -.5px;
+}
+
+.terms-tbl-txt-bold {
+  font-family: "Kakao-Bd";
+  font-weight: 700;
+}
+
+.terms-tbl-txt {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: -.5px;
+}
+
+.terms-list {
+  margin-top: 16px;
+}
+
+.terms-item.mt-30 {
+  margin-top: 30px;
+}
+
+.terms-item.mt-18 {
+  margin-top: 18px;
+}
+
+.withdraw-txt {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -.5px;
+}
+
+.withdraw-txt.mt-20 {
+  margin-top: 20px;
+}
+
+.withdraw-txt.mt-6 {
+  margin-top: 6px;
+}
+
+.withdraw-txt.mt-16 {
+  margin-top: 16px;
+}
+
+.withdraw-txt.withdraw-txt-dot {
+  position: relative;
+  padding-left: 10px;
+}
+
+.withdraw-txt.withdraw-txt-dot:before {
+  display: block;
+  content: "･";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.withdraw-txt.withdraw-txt-essential {
+  position: relative;
+  padding-left: 10px;
+}
+
+.withdraw-txt.withdraw-txt-essential:before {
+  display: block;
+  content: "*";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.withdraw-ttl {
+  padding: 30px 0 20px;
+  border-bottom: 1px solid #000;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: -.5px;
+}
+
+.withdraw-item {
+  margin-top: 30px;
+}
+
+.withdraw-sub-list {
+  margin-top: 6px;
+}
+
+.withdraw-sub-list.mt-18 {
+  margin-top: 18px;
+}
+
+.withdraw-sub-item {
+  margin-top: 4px;
+}
+
+.withdraw-sub-item:first-child {
+  margin-top: 0;
+}
+
+.withdraw-submit {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: #fff;
+}
+
+.withdraw-chk-box {
+  padding: 10px 18px;
+  border-top: 1px solid #eee;
+}
+
+.withdraw-btn {
+  display: block;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: -.5px;
+  line-height: 60px;
+  text-align: center;
+  background: #5d5f66;
+}
+
+.mx-750 {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.top-label {
+  position: relative;
+  padding: 17px 18px 16px 18px;
+}
+
+.top-label h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  font-weight: normal;
+}
+
+.top-label_back {
+  position: absolute;
+  top: 16px;
+  width: 20px;
+  height: 20px;
+  background: url("https://images.kakao.golf/web/images/locker/selfcheckin/icon_back.png") 50% 50% no-repeat;
+  font-size: 0;
+}
+
+.notice-view-ttl {
+  color: #000;
+  font-family: "Kakao-Rg";
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -.5px;
+}
+
+.notice-view-txt {
+  color: #666;
+  font-family: "Kakao-Rg";
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -.5px;
+}
+
+.notice-category {
+  display: block;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+@media screen and (max-height: 540px) {
+  .login-wrap {
+    padding-top: 64px;
+  }
+  .terms-ttl {
+    padding: 48px 18px 32px;
+  }
+}

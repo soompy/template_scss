@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>카카오골프예약</title>
+  <link rel="stylesheet" type="text/css" href="./css/common.css" />
+  <link rel="stylesheet" type="text/css" href="./css/myinfo.css" />
+</head>
+
+<body class="terms-body mx-750">
+  <div id="wrapper">
+    <div class="top-label">
+      <h2>내 정보</h2>
+      <a href="#" class="top-label_back">뒤로 가기</a>
+    </div>
+    <div class="myinfo">
+      <span class="top-guide-txt">이름 (필수)</span>
+      <input type="text" class="box-input-txt" >
+      <span class="bottom-guide-txt">*캐디백 네임택과 동일한 이름을 적어주세요</span>
+      <span class="top-guide-txt">휴대폰 번호 (필수)</span>
+      <input type="number" class="box-input-txt" pattern="[0-9]*">
+      <span class="top-guide-txt">성별</span>
+
+      <!-- [D]
+        UI 확인용으로 버튼에 active 클래스 삽입
+      -->
+      <div class="btn-gender-wrap">
+        <a href="#" class="active">남성</a>
+        <a href="#">여성</a>
+      </div>
+
+      <div class="terms-all-chk">
+        <div class="terms-chk">
+          <input id="termsAllChk" type="checkbox" class="input-chk" />
+          <label for="termsAllChk" class="all-chk-label">전체 동의 합니다.</label>
+        </div>
+      </div>
+      <div class="terms-chk-box">
+        <div class="terms-chk chk-active">
+          <input id="termsChk1" type="checkbox" class="input-chk" checked="checked" />
+          <label for="termsChk1" class="chk-label">[필수] 개인정보 제3자 제공동의</label>
+          <a href="#" class="terms-link"></a>
+        </div>
+        <div class="terms-chk">
+          <input id="termsChk2" type="checkbox" class="input-chk" />
+          <label for="termsChk2" class="chk-label">[필수] 개인정보 처리방침 동의</label>
+          <a href="#" class="terms-link"></a>
+        </div>
+        <div class="terms-chk">
+          <input id="termsChk3" type="checkbox" class="input-chk" />
+          <label for="termsChk3" class="chk-label">[선택] 마케팅 수신 동의</label>
+          <a href="#" class="terms-link"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-bottom"><a href="#">정보 저장하기</a></div>
+  </div>
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript">
+
+  // 성별 체크
+  $(document).on('click', '.btn-gender-wrap a', function(e) {
+    e.preventDefault();
+    $('.btn-gender-wrap a').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  (function (win, $) {
+      'use strict';
+      var checkbox = function () {
+        var inputChkbox = $('.terms-chk input[type="checkbox"]');
+
+        inputChkbox.each(function () {
+          inputChkbox.on('change', function () {
+            if ($(this).is(':checked')) {
+              $(this).parent().addClass('chk-active');
+            } else {
+              $(this).parent().removeClass('chk-active');
+            }
+          });
+        });
+      };
+
+      $(function () {
+        checkbox();
+      });
+
+    })(window, window.jQuery);
+  </script>
+</body>
+
+</html>
